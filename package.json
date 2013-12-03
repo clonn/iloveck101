@@ -1,0 +1,33 @@
+{
+  "name": "iloveck101",
+  "version": "0.0.1",
+  "description": "iloveck101",
+  "main": "node index.js",
+  "bin": {
+    "iloveck101": "./bin/iloveck101"
+  },
+  "dependencies": {
+    "jsdom": "~0.8.9"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-apidoc": "~0.2.0",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-mocha-test": "~0.6.3",
+    "request": "~2.27.0",
+    "should": "~1.2.2",
+    "grunt-simple-mocha": "~0.4.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "clonn",
+  "license": "MIT"
+}
