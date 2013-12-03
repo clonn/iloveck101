@@ -13,23 +13,23 @@ saveFile = (fileUrl, currentFullPath) ->
   request(fileUrl).pipe(ws)
 
 module.exports.set = (url, currentPath) ->
+  folderName = url.match(/thread-\d+-\d/)[0]
 
+  unless folderName
+    return console.log "Network is not executed"
+
+  fullPath = path.join(currentPath, targetFolder, folderName)
+
+  mkdirp fullPath, (err) ->
+    if err
+      return console.error(err)
+    else
+      console.log(fullPath)
 
   request url, (err, res, body) ->
     $ = cheerio.load(body)
-    title = $('title').html()
     nodeImgs = $('#postlist .plhin:nth-of-type(2) .t_fsz img')
-    fullPath = path.join(currentPath, "#{targetFolder}/#{title}")
-
-    unless title
-      return console.log "Network is not executed"
-      
-    mkdirp fullPath, (err) ->
-      if err
-        return console.error(err)
-      else
-        console.log(fullPath)
-
+    
     for node in nodeImgs
       fileUrl = node.attribs.file
       fileName = fileUrl.split("/")
