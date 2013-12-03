@@ -7,7 +7,9 @@
     "iloveck101": "./bin/iloveck101"
   },
   "dependencies": {
-    "jsdom": "~0.8.9"
+    "cheerio": "~0.12.4",
+    "request": "~2.27.0",
+    "mkdirp": "~0.3.5"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
