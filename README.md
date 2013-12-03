@@ -48,11 +48,6 @@ $ iloveck101 http://ck101.com/thread-2876990-1-1.html
 ![圖片](https://raw.github.com/tzangms/iloveck101/master/docs/images2.png) 
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tzangms/iloveck101/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
-
-
-
 ## License
 Copyright (c) 2013 clonn
 Licensed under the MIT license.
