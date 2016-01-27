@@ -28,7 +28,7 @@ module.exports.set = (url, currentPath) ->
 
   request url, (err, res, body) ->
     $ = cheerio.load(body)
-    nodeImgs = $('#postlist .plhin:nth-of-type(2) .t_fsz img')
+    nodeImgs = $('img.zoom')
     
     for node in nodeImgs
       fileUrl = node.attribs.file
